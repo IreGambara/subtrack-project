@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const container = document.getElementById('sidebar-container');
   if (!container) return;
 
-  fetch(`${BASE_PATH}/pages/sidebar.html`)
+  fetch(`${BASE_PATH}/sidebar.html`)
   .then(res => {
       if (!res.ok) throw new Error('Sidebar not found');
       return res.text();
